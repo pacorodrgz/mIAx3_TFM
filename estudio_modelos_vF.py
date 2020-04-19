@@ -516,23 +516,3 @@ def run(ruta, conj_vol, distancia, conj_top, conj_opt, conj_lr, conj_epc, conj_b
     print("El dataset no es adecuado: NaN, duplicados...")
   
   return df_Features, df_Dataset, df_Evaluation
-
-'''
-HIPERPARAMETROS
-'''
-
-'''
-ruta = '/content/drive/My Drive/Colab Notebooks/TFM/'
-conjunto_volatilidades = (10, 30, 60, 90, 120)
-distancia = 22
-analisis = False
-conjunto_topologias = ((32,8), (64, 32, 16, 4))
-conjunot_optimizadores = ('SGD', 'Adam')
-conjunto_learning_rates = (0.1, 0.001)
-conjunto_epocas = (500, 1000)
-conjunto_batch_size = (64, 256)
-
-df_Caracteristicas, df_Dataset, df_Evaluaciones = run(ruta, conjunto_volatilidades, distancia, conjunto_topologias, conjunot_optimizadores, 
-                                                                  conjunto_learning_rates, conjunto_epocas, conjunto_batch_size, analisis)
-
-'''

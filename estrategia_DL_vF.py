@@ -362,20 +362,3 @@ def run(ruta, modelo,
   export_CSV(LiqData, ruta, '_05_Liq_{}'.format(modelo), iniDate, endDate)
 
   return FutData, OpcData, PosData, TesData, LiqData
-
-
-'''
-HIPERPARÁMETROS
-'''
-'''
-_ruta = '/content/drive/My Drive/Colab Notebooks/TFM'
-_nombre_modelo = 'modelo_5_2ly_SGD_0001lr_500ep_64bs'
-
-_fecha_inicial = dt.datetime(year=2010,month=6,day=23)
-_fecha_final = dt.datetime(year=2019,month=2,day=22)
-
-_capital_inicial = 100000.0
-_comision = 2.5
-
-Futuro, Opciones, Posiciones, Tesoreria, LiqData = run(ruta = _ruta, modelo = _nombre_modelo, iniDate = _fecha_inicial, endDate = _fecha_final)
-'''

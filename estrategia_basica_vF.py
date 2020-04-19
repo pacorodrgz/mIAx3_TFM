@@ -321,23 +321,3 @@ def run(ruta = '/content/drive/My Drive/Colab Notebooks/TFM',
   export_CSV(LiqData, ruta, '_05_Liquidaciones', iniDate, endDate, desvStrike)
 
   return FutData, OpcData, PosData, TesData, LiqData
-
-'''
-HIPERPARÁMETROS
-'''
-
-'''
-_ruta = '/content/drive/My Drive/Colab Notebooks/TFM'
-
-_codigo_de_mes = pd.Series(['F','G','H','J','K','M','N','Q','U','V','X','Z'], index = [1,2,3,4,5,6,7,8,9,10,11,12])
-
-_fecha_inicial = dt.datetime(year=2010,month=1,day=4)
-_fecha_final = dt.datetime(year=2019,month=12,day=31)
-
-_capital_inicial = 100000.0
-_desv_strike = 0.98
-_comision = 2.5
-
-Futuro, Opciones, Posiciones, Tesoreria, LiqData = run(endDate = _fecha_final)
-
-'''
